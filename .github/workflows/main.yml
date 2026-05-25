@@ -31,12 +31,6 @@ jobs:
             python-version: '3.x'
     
       - run: pip install -r requirements.txt
-
-      - name: Setup NPM
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-      - run: npm install
       
       - name: Run Super-Linter
         uses: github/super-linter@latest
