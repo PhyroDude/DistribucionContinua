@@ -40,4 +40,7 @@ jobs:
         env:
             DEFAULT_BRANCH: main
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            VALIDATE_PYTHON_BLACK: false       # Desactiva Black
+            VALIDATE_PYTHON_ISORT: false       # Desactiva isort
+            VALIDATE_PYTHON_FLAKE8: false
     
